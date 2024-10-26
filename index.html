@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Guess the Color</h2>
 
+    <div id="color" class="color"></div>
+
+    <div id="colors_row" class="colors_row">
+        <p>RGB:</p>
+    </div>
+
+    <form>
+        <p>Hex Value: </p>
+        <input type="text" id="guess"/>
+        <button type="submit" >Guess</button>
+    </form>
+
+    <p id="feedback" class="feedback"></p>
+
+    <button onclick="refresh()">Refresh Game</button>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

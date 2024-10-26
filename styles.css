@@ -1,0 +1,13 @@
+.color {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+
+.colors_row {
+    display: flex;
+    height: 25px;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
