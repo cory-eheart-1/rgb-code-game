@@ -39,3 +39,11 @@ document.querySelector('form').addEventListener('submit', (event) => {
     event.preventDefault();
     guess();
 })
+
+document.getElementById("r_slider").oninput = function() {
+    if (parseInt(this.value).toString(16).toUpperCase().length == 1) {
+        document.getElementById("r_guess").innerHTML = "0" + parseInt(this.value).toString(16).toUpperCase();
+    } else {
+        document.getElementById("r_guess").innerHTML = parseInt(this.value).toString(16).toUpperCase();
+    }
+}
